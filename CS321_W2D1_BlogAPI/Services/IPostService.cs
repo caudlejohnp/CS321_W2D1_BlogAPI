@@ -6,9 +6,10 @@ namespace CS321_W2D1_BlogAPI.Services
 {
     public interface IPostService
     {
-        IEnumerable<Post> GetAll();
-        Post Get(int id);
-        Post Add(Post post);
-        void Remove(Post post);
+        Post Add(Post post);            //CREATE
+        Post Get(int id);               //READ
+        Post Update(Post post);         //UPDATE
+        void Remove(Post post);         //DELETE
+        IEnumerable<Post> GetAll();     //LIST
     }
 }
